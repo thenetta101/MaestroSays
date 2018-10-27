@@ -1,0 +1,80 @@
+
+
+.redBlock {
+    background-color: #ff0000;
+}
+.yellowBlock {
+    background-color: #ffff00;
+}
+.greenBlock {
+    background-color: #00ff00;
+}
+.blueBlock {
+    background-color: #0000ff;
+}
+
+.footer {
+    font-size: .8em;
+    margin-top: 30px;
+}
+
+.simonBlock {
+    border-radius: 5px;
+    max-width: 400px;
+}
+.simonBlock:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+}
+.simonField {
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 auto;
+    max-width: 800px;
+    position:relative;
+    overflow: hidden;
+}
+.statusBanner {
+    background-color: rgb(90.6%, 92.1%, 61.8%);
+    display: none;
+    height: 80px;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    z-index: 1000;
+}
+.errorBtnColor {
+    background-color: #f00 !important;
+    border: 2px solid #000;
+    transition: background-color .3s ease-in-out;
+}
+
+/*.btn-primary {
+    transition: background-color .2s ease-in-out;;
+}*/
+#gameMenu {
+    background-color: rgb(90.6%, 92.1%, 61.8%);
+    color: #000; 
+    padding-bottom: 20px;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    width: 100%;
+    z-index: 1000;
+}
+
+#submitit {
+    border-radius: 50%;
+    height: 25%;
+    left: 38%;
+    position: absolute;
+    top: 38.25%;
+    width: 25%;
+    z-index: 2;
+    transition: background-color .3s ease-in-out;
+}
+#freePlay {
+    display: none;
+}

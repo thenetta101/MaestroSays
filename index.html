@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="./css/desktop.css" />
+        <link rel="stylesheet" type="text/css" href="./css/mobile.css" />
+        <title>CyberBlacksmith - MaestroSays</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="container">
+                <h2 class="text-center">Maestro Says</h2>
+                <div class="simonField">
+                    <button class="btn btn-primary" type="button" id="submitit" >Check</button>
+                    <div id="red" class="col-xs-6 redBlock simonBlock">
+                    </div>
+                    <div id="yellow" class="col-xs-6 yellowBlock simonBlock">
+                    </div>
+                    <div id="green" class="col-xs-6 greenBlock simonBlock">
+                    </div>
+                    <div id="blue" class="col-xs-6 blueBlock simonBlock">
+                    </div>
+                </div>              
+            </div>
+            <div id="freePlay" class="container-fluid text-center">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2 >Free Play Mixer</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-offset-2 col-xs-8">
+                        <button class="btn btn-warning" id="clearMix">Clear Mix</button>
+                        <button class="btn btn-success" id="playMix">Play Mix</button>
+                        <button class="btn btn-danger showGameMenu" id="exitFP">Exit Free Play</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer text-center">
+                &copy;2017 Paul McDowell &amp; Drake Drinnon, all rights reserved.<br /> Code and Design by Paul McDowell, Audio By Drake Drinnon.
+            </div>
+        </div>
+        
+        <button class="btn btn-primary" type="button" id="playit" style="display: none;">Play it!</button>
+        <div id="gameMenu" class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h2>Setup</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-3 col-xs-6">
+                    <div class="input-group">                
+                        <span class="input-group-addon">Difficulty</span>
+                        <select class="form-control" id="difficultySetting">
+                            <option value="0">Free Play</option>
+                            <option value="5">Easy - 5 Rounds</option>
+                            <option value="10" selected>Medium - 10 Rounds</option>
+                            <option value="15">Hard - 15 Rounds</option>
+                            <option value="25">Beast - 25 Rounds, ya'rly</option>
+                        </select>
+                    </div>
+                    <br />
+                    <button class="btn btn-primary btn-block" type="button" id="startGame" >Start Game</button>
+                </div>
+            </div>
+        </div>
+        <div class="statusBanner"> 
+            <p></p>
+            <button class="btn btn-primary showGameMenu" type="button" >Main Menu</button>
+        </div>
+        <script type="text/javascript" src="./js/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="./js/howler.min.js"></script>
+        <script type="text/javascript" src="./js/simongame.js"></script>
+    </body>
+</html>
